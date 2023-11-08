@@ -1,0 +1,102 @@
+@media (min-width: 1300px){
+/*TEXTO TERMO DE USO DO SITE*/
+.term {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200vh;
+    background: url(IMG/universe.jfif)no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .term-txt{
+    margin-top: -400px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+    width: 80%;
+    height: 1100px;
+    border-radius: 30px;
+    background-color: transparent ;
+    padding: 30px 10px;
+    border: 2px solid #ffffff33;
+    
+  } 
+  
+  .term-txt p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* RESONSIVIDADE PARA DISPOSITIVOS MOVEIS MENU - largura 360px X 450px */
+@media (min-width: 360px) and (max-width: 450px){
+  .term {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 200vh;
+    background: url(IMG/universe.jfif)no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .term-txt{
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+    width: 80%;
+    height: 2000px;
+    border-radius: 30px;
+    background-color: transparent ;
+    padding: 30px 10px;
+    border: 2px solid #ffffff33;
+    
+  } 
+  
+  .term-txt p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* RESONSIVIDADE PARA DISPOSITIVOS MOVEIS MENU - largura 760px X 820px */
+
+@media (min-width: 760px) and (max-width: 820px){
+  .term {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(IMG/universe.jfif)no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  
+  .term-txt{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+    width: 80%;
+    height: 1350px;
+    border-radius: 30px;
+    background-color: transparent ;
+    padding: 30px 10px;
+    border: 2px solid #ffffff33;
+    
+  } 
+  
+  .term-txt p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+}

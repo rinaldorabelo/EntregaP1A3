@@ -1,0 +1,1418 @@
+/* O * ASTERISCO SIGNIFICA QUE TUDO QUE ESTIVER AQUI DENTRO {} I'RA SE APLICAR EM TODA PÁGINA*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+/*SEMPRE ADICIONAR DE FORMA PADRÃO O BORDER BOX*/
+box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.login-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url(IMG/galaxia\ roxa.avif)no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.login-area2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url(IMG/universe.jfif)no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: #4E1868;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60px;
+    margin: 0%;
+    
+
+}
+
+.nome h1{
+    color: #f0ffff;
+}
+
+.logo img{
+    padding: 5px;
+    block-size: 50px;
+
+}
+.menu{
+    margin: auto;  
+    margin-left: 15%;
+}
+
+.menu ul {
+    /*Comando para alinhar lado a lado uma ul*/
+    display: flex;
+    justify-content: center;
+    /*-----------------------*/
+    list-style: none;
+}
+.menu li a{
+    padding: 15px;
+    color: azure;
+    font-size: 600;
+    text-decoration: none;
+}
+   /*Class .Btn img REFERENTE AO TAMANHO DO BOTÃO*/
+.Btn img{
+    padding: 10px;
+    block-size: 80px;
+}
+
+   /*CLASS Btn REFERENTE A ALTERAÇÕES QUE PODEM SER FEITO NO BOTÃO SAIDA*/
+   
+   .Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #9530AE;
+    margin-right: 1%;
+
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: #ffffff;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
+
+  .text a{
+    text-decoration: none;
+  }
+   /*CLASS BUTM REFERENTE A ALTERAÇÕES QUE PODEM SER FEITO NO BOTÃO MENU*/
+
+   .butm {
+    height: 30px;
+    width: 86%;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #333333;
+    transition: all 0.5s ease-in-out;
+    margin: 10px;
+  }
+  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+    list-style: none;
+    margin-top: -3.5%;
+  }
+  
+  .butm::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #8a0386;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .butm:hover {
+    box-shadow: 1px 1px 150px #252525;
+    color: #fff;
+    border: none;
+  }
+  
+  .butm:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+.box{
+  height: 600px;
+}
+/*CONFIGURAÇÒES DA IMAGEM DA ABA SOBRE*/
+
+.imgC img{
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
+
+/*CONFIGURAÇÒES DO TEXTO ABA SOBRE*/
+
+
+.corpo h1{
+  font-family: 'Roboto', sans-serif;
+  color: azure;
+  text-align: center;
+  font-size: 55px;
+}
+
+.corpo p{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: azure;
+  font-size: 20px;
+}
+.corpo h2{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: azure;
+  font-size: 30px;
+  padding: 100px;
+}
+
+.acredito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.acredimg {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  height: 700px;
+}
+
+.acredtxt {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  flex-flow: row wrap;
+  width: 35%;
+}
+.acredito h2{
+  font-size: 30px;
+  padding: 25px;
+}
+.acredito p{
+  text-align: center;
+}
+
+/*BOTÃO PARA CHAMADA DA TELA CADASTRO*/
+.cadast{
+  color: azure;
+  text-decoration: none;
+}
+.bn {
+  --border-radius: 25px;
+  --border-width: 7px;
+  appearance: none;
+  position: relative;
+  padding: 1em 2em;
+  border: 0;
+  background-color: #212121;
+  font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffff;
+  z-index: 2;
+}
+
+.bn::after {
+  --m-i: linear-gradient(#000, #000);
+  --m-o: content-box, padding-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--border-width);
+  background-image: conic-gradient(
+		#ff0080,
+		#ff0080,
+		#ff0080,
+		#ff0080,
+		#ff0080,
+		#ff0080,
+		#ff0080
+	);
+  -webkit-mask-image: var(--m-i), var(--m-i);
+  mask-image: var(--m-i), var(--m-i);
+  -webkit-mask-origin: var(--m-o);
+  mask-origin: var(--m-o);
+  mask-clip: var(--m-o);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  filter: hue-rotate(0);
+  animation: rotate-hue634 linear 500ms infinite;
+  animation-play-state: paused;
+  border-radius: 20px;
+  border-color: #000;
+}
+
+.bn:hover::after {
+  animation-play-state: running;
+  border-radius: 10px;
+}
+
+@keyframes rotate-hue634 {
+  to {
+    filter: hue-rotate(1turn);
+  }
+}
+
+.bn,
+.bn::after {
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+button:active {
+  --border-width: 5px;
+}
+
+.bn {
+  padding: 0.9em 1.6em;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 32px;
+}
+
+.bn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(46, 46, 46);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.bn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #07d888, #e40851, #2f00ff, #00ff37,
+      #ec0808, #2600ff, #0bd157, #2f00ff
+);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing345 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+@keyframes glowing345 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn:hover::before {
+  opacity: 1;
+}
+
+.bn:active:after {
+  background: transparent;
+}
+
+.bn:active {
+  color: #000;
+  font-weight: bold;
+}
+
+/*==================================================================================*/
+
+/*TEXTO E IMG ABA ACESSIBILIDADE*/
+
+.acess{
+  margin-top: 125px;
+}
+.acredtxt{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: -10%;
+  flex-flow: row wrap;
+  width: 35%;
+}
+
+.acredimg{
+  display: flex;
+  justify-content: center;
+  margin-top: -10%;
+  width: 35%;
+  height: 500px;
+}
+
+.acredito2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.acredimg2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -5%;
+  width: 35%;
+  height: 500px;
+}
+
+.acredtxt2 {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: -5%;
+  flex-flow: row wrap;
+  width: 35%;
+}
+.acredito2 h2{
+  font-size: 30px;
+  padding: 25px;
+}
+.acredito2 p{
+  text-align: justify;
+}
+
+/*TEXTO E IMG ABA SEGURANÇA*/
+
+.seg{
+  margin-top: -11%;
+}
+
+.acredito3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.acredimg3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 600px;
+  width: 35%;
+  height: 500px;
+}
+
+.acredtxt3 {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 550px;
+  flex-flow: row wrap;
+  width: 35%;
+}
+.acredito3 h2{
+  font-size: 30px;
+  padding: 25px;
+}
+.acredito3 p{
+  text-align: center;
+}
+
+/*FOOTER COPY BASE*/
+
+footer {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3d3b3b;
+  color: #ffffff;
+  box-sizing: border-box;
+  height: 66px;
+  margin-top: 350px;
+  }
+
+
+/*CSS TELA DE LOGIN  BASE*/
+  .login-box{
+    width: 420px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: transparent ;
+    color:#850cfe;
+    margin-top: 5%;
+    padding: 30px 40px;
+    border: 2px solid #ffffff33;
+    backdrop-filter: blur(10px);
+
+}
+
+.login-box h2{
+    font-size: 36px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(116, 24, 221), rgb(73, 73, 230), rgb(183, 113, 212));
+    background-clip: text; -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-box .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputbox input{
+    width: 90%;
+    height: 70%;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 9px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+    margin-left: 22px;
+}
+
+.inputbox input::placeholder{
+    color: aliceblue;
+}
+
+.inputbox i{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-70%);
+    font-size: 20px;
+}
+
+.login-box .lembrar-senha{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    margin-left: 22px;
+    margin-right: 18px;
+}
+
+.lembrar-senha label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.lembrar-senha a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.lembrar-senha a:hover{
+    text-decoration: underline;
+}
+
+.login-box .btn{
+    width: 90%;
+    height: 40px;
+    background-color: #850CFE;
+    border: 1px solid  white;
+    outline: none;
+    border-radius: 9px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(118, 2, 250), rgb(74, 74, 217), rgb(52, 14, 99));
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.login-box .register{
+    font-size: 14.5px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 22px;
+}
+
+.register p a{
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;;
+}
+
+:root{
+    --gradient: linear-gradient
+}
+ 
+/*CSS TELA DE CADASTRO  BASE*/
+
+.login-box2{
+  width: 420px;
+  height: 550px;
+  border-radius: 30px;
+  background-color: transparent ;
+  color:#850cfe;
+  padding: 30px 40px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px);
+  margin-top: 70px;
+
+}
+.login-box2 h2{
+  font-size: 36px;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(116, 24, 221), rgb(73, 73, 230), rgb(183, 113, 212));
+  background-clip: text; -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-box2 .inputbox{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.login-box2 .lembrar-senha{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+  margin-left: 22px;
+  margin-right: 18px;
+}
+.login-box2 .btn2{
+  width: 90%;
+  height: 35px;
+  background-color: #850CFE;
+  border: 1px solid  white;
+  outline: none;
+  border-radius: 9px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background-image: linear-gradient(to right, rgb(118, 2, 250), rgb(74, 74, 217), rgb(52, 14, 99));
+}
+
+.login-box2 .register{
+  font-size: 14.5px;
+  text-align: left;
+  margin-top: 25px;
+  margin-left: 22px;
+}
+
+/*CSS TELA DE CADASTRO - BOTÃO GAME ON  BASE*/
+
+.btn2 {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  font-family: inherit;
+  color: #fff;
+  width: 9em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4,#850CFE);
+  background-size: 300%;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.btn2:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btn2:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg,#850CFE,#4b0195,#6b22b4,#9a53e0,#6f4a94);
+  background-size: 400%;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.btn2:hover::before {
+  filter: blur(20px);
+}
+
+.btn2:active {
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4,#850CFE);
+}
+/*TEXTO TERMO DE USO DO SITE*/
+.term {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 200vh;
+  background: url(IMG/universe.jfif)no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.term-txt{
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: azure;
+  width: 80%;
+  height: 1100px;
+  border-radius: 30px;
+  background-color: transparent ;
+  padding: 30px 10px;
+  border: 2px solid #ffffff33;
+  
+} 
+
+.term-txt p{
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*TELA DESCUBRA CAROUSEL*/
+
+.carousel {
+  padding-top: 90px;
+}
+.palette {
+  display: flex;
+  height: 600px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.color {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.color span {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.color:nth-child(1) {
+  background-image:url(IMG/starfield.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.color:nth-child(2) {
+  background-image:url(IMG/spiderman.jpg);
+  background-position: left 70%;
+  background-size: cover;
+}
+
+.color:nth-child(3) {
+  background-image:url(IMG/mw2.jpg);
+  background-position: top 30%;
+  background-size: cover;
+}
+
+.color:nth-child(4) {
+  background-image:url(IMG/fifa22.jpg);
+  background-position: top 15%;
+  background-size: cover;
+}
+
+.color:nth-child(5) {
+  background-image:url(IMG/Forza-Horizon-6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.color:hover {
+  flex: 2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.color:hover span {
+  opacity: 1;
+}
+
+/*TELA DESCUBRA CATEGORIAS*/
+
+.cardGroup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+/*CARD  DO NOME DA ABA = MELHORES DO SEMESTRE*/
+
+.txt-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 200px;
+}
+
+.card-txt{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.card-txt h3{
+  font-family: 'Roboto', sans-serif;
+  color: azure;
+  text-align: center;
+}
+
+.card-txt {
+  width: 254px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 15px;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  font-weight: 900;
+  transition-duration: .2s;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.card-txt:before, .card-txt:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.card-txt:after {
+  filter: blur(100px);
+}
+
+
+
+/*================================================================================*/
+
+/* CONFIG DOS CARDS DE CATEGORIA*/
+.cat-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 500px;
+}
+
+.card {
+  position: relative;
+  width: 90px;
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-inline: 30px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 10px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: azure;
+}
+
+.card p:not(.heading) {
+  font-size: 2px;
+}
+
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+.card p a{
+  text-decoration: none;
+  color: azure;
+}
+
+/*BASE GRADE DE JOGOS DE AÇÃO*/
+.body-acao{
+  background: #111111;
+}
+
+/*primeira grade*/
+
+.corpo-acao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 95vh;
+
+
+}
+
+.sec-corpo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #171717;
+  margin: 0;
+  border-radius: 20px;
+  width: 96%;
+  height: 470px;
+}
+
+
+
+.acao-txt{
+  font-family: 'Roboto', sans-serif;
+  margin-left: 50px;
+  width: 120%;
+  height: 90%;
+  color: azure;
+  margin: 30px;
+  margin-top: 5%;
+
+}
+
+.acao-txt h1{
+  font-size: 50px;
+}
+
+.acao-txt p{
+  text-align: justify;
+}
+
+
+.acao-img{
+  display: flex;
+  justify-content: center;
+  background-size:cover;
+  margin-left: 20px;
+  width: 35%;
+  height: 470px;
+
+  /*DEIXAR A FOTO COM EFEITO TRANSPARENTE*/
+
+  mask-image: linear-gradient(to right, transparent 25%, black 20%);
+}
+
+.acao-img img{
+  border-radius: 20px;
+}
+
+/* RANKIG 4*/
+
+
+.corpo-acao2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 25vh;
+
+}
+
+.acao-img2{
+  display: flex;
+  justify-content: center;
+  background-size:cover;
+  margin-left: 280px;
+  width: 35%;
+  height: 470px;
+
+  /*DEIXAR A FOTO COM EFEITO TRANSPARENTE*/
+
+  mask-image: linear-gradient(to right, transparent 25%, black 20%);
+}
+
+.img2{
+  border-radius: 20px;
+}
+
+/*RANKIG 3*/
+
+.corpo-acao3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 95vh;
+
+}
+
+/*RANKIG 2*/
+
+.corpo-acao4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 25vh;
+
+}
+
+.corpo-acao5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+/* CONFIGURAÇÃO NOME E HORAS JOGADAS DA PÁGINA MINHA ÁREA */
+
+.areaUs{
+  display: flex;
+  justify-content: space-between;
+  background-color: #202020;
+  width: 100%;
+  height: 120px;
+}
+
+.userName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5%;
+  width: 5%;
+  height: 120px;
+  background-color: transparent;
+}
+
+.gameHora{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5%;
+  width: 5%;
+  height: 120px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.userName h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 85%;
+}
+
+.gameHora h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 85%;
+  padding: 3%;
+}
+
+.gameHora h2{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 85%;
+  padding: 3%;
+}
+
+
+/* CONFIGURAÇÃO DOS INPUTS DO CADASTRO DE JOGOS */
+.cadJogo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #1a1a1a;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+}
+
+.cadJogo h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.cadJogo input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 55%;
+}
+
+.cadJogo select{
+  width: 10%;
+  height: 55%;
+  text-align: center;
+}
+
+/* CONFIGURAÇÃO DO CABEÇLHO DA TABELA */
+
+.tabelaGame{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  background-color: #1d1d1d;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  
+}
+
+
+.cabTab th{
+  width: 200px;
+  text-align: center;
+  background-color: #5f5e5e;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+}
+
+#ref{
+  height: 50px;
+  text-align: center;
+  border-color: #3d3d3d;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+}
+/* EFEITO DO BOTÃO DE EDITAR E EXCLUIR DA TABELA DE JOGOS JÁ ACADASTRADA RETIRADO DA URL'https://uiverse.io/SteveBloX/light-owl-27'  */
+.gameItens button{
+  border-radius: 8px;
+  height: 20px;
+  border: none;
+  background: #5f5e5e;
+  color: white;
+  margin-top: 20%;
+  box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px #00000026,
+    0 1.8065619053231785px 1.8065619053231785px -1.25px #00000025,
+    0 3.6217592146567767px 3.6217592146567767px -1.875px #00000023,
+    0 6.8655999097303715px 6.8655999097303715px -2.5px #00000020,
+    0 13.646761411524492px 13.646761411524492px -3.125px #0000001b,
+    0 30px 30px -3.75px #0000000d;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+}
+
+.gameItens button:active {
+  scale: 0.95;
+  background: #fff;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 0.637473px 1.14745px -1.125px,
+    rgba(0, 0, 0, 0.24) 0px 1.93094px 3.4757px -2.25px,
+    rgba(0, 0, 0, 0.192) 0px 5.10423px 9.18761px -3.375px,
+    rgba(0, 0, 0, 0.03) 0px 16px 28.8px -4.5px;
+}
+
+/* RESPONSIVIDADE DO MENU E DO CARD DE JOGOS */
+@media (min-width: 1200px){
+  .menu{
+    margin: auto;  
+    margin-left: 18%;
+    
+}
+.palette {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.gameHora{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2%;
+  width: 5%;
+  height: 120px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.userName h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 120%;
+}
+
+.gameHora h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 120%;
+  padding: 3%;
+}
+
+.gameHora h2{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 120%;
+  padding: 3%;
+}
+
+.cadJogo h4{
+  margin-left: -1.5%;
+}
+
+}
+
+@media (max-width: 768px){
+  .menu{
+    margin: auto;  
+    margin-left: 15%;
+}
+}
+
+@media (min-width: 1300px){
+  .menu{
+    margin: auto;  
+    margin-left: 28%;
+}
+.palette {
+  display: flex;
+  height: 800px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.gameHora{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.8%;
+  width: 5%;
+  height: 120px;
+  background-color: transparent;
+  text-align: center;
+}
+
+
+.userName h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 85%;
+}
+
+.gameHora h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 85%;
+  padding: 3%;
+}
+
+.gameHora h2{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 85%;
+  padding: 3%;
+}
+
+.cadJogo h4{
+  margin-left: -4.5%;
+}
+
+}
+
+
+

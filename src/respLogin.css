@@ -1,0 +1,310 @@
+/* RESONSIVIDADE PARA DISPOSITIVOS MOVEIS Login - largura 360px X 450px */
+
+@media (min-width: 360px) and (max-width: 450px){
+/*CSS TELA DE LOGIN  BASE*/
+.login-box{
+    width: 350px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: transparent ;
+    color:#850cfe;
+    margin-top: 5%;
+    padding: 30px 40px;
+    border: 2px solid #ffffff33;
+    backdrop-filter: blur(10px);
+
+}
+
+.login-box h2{
+    font-size: 36px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(116, 24, 221), rgb(73, 73, 230), rgb(183, 113, 212));
+    background-clip: text; -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-box .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputbox input{
+    width: 90%;
+    height: 70%;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 9px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+    margin-left: 22px;
+}
+
+.inputbox input::placeholder{
+    color: aliceblue;
+}
+
+.inputbox i{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-70%);
+    font-size: 20px;
+}
+
+.login-box .lembrar-senha{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    margin-left: 22px;
+    margin-right: 18px;
+}
+
+.lembrar-senha label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.lembrar-senha a{
+    color: #ffffff;
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+.lembrar-senha a:hover{
+    text-decoration: underline;
+}
+
+.login-box .btn{
+    width: 90%;
+    height: 40px;
+    background-color: #850CFE;
+    border: 1px solid  white;
+    outline: none;
+    border-radius: 9px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(118, 2, 250), rgb(74, 74, 217), rgb(52, 14, 99));
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.login-box .register{
+    font-size: 14.5px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 22px;
+}
+
+.register p a{
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;;
+}
+
+:root{
+    --gradient: linear-gradient
+}
+}
+
+/* RESONSIVIDADE PARA DISPOSITIVOS MOVEIS body - largura 760px X 820px */
+
+@media (min-width: 760px) and (max-width: 820px){
+/*CSS TELA DE LOGIN  BASE*/
+.login-box{
+    width: 420px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: transparent ;
+    color:#850cfe;
+    margin-top: 5%;
+    padding: 30px 40px;
+    border: 2px solid #ffffff33;
+    backdrop-filter: blur(10px);
+
+}
+
+.login-box h2{
+    font-size: 36px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(116, 24, 221), rgb(73, 73, 230), rgb(183, 113, 212));
+    background-clip: text; -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-box .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputbox input{
+    width: 90%;
+    height: 70%;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 9px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+    margin-left: 22px;
+}
+
+.inputbox input::placeholder{
+    color: aliceblue;
+}
+
+.inputbox i{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-70%);
+    font-size: 20px;
+}
+
+.login-box .lembrar-senha{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    margin-left: 22px;
+    margin-right: 18px;
+}
+
+.lembrar-senha label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.lembrar-senha a{
+    color: #ffffff;
+    margin-top: 3px;
+    text-decoration: none;
+}
+
+.lembrar-senha a:hover{
+    text-decoration: underline;
+}
+
+.login-box .btn{
+    width: 90%;
+    height: 40px;
+    background-color: #850CFE;
+    border: 1px solid  white;
+    outline: none;
+    border-radius: 9px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(118, 2, 250), rgb(74, 74, 217), rgb(52, 14, 99));
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.login-box .register{
+    font-size: 14.5px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 22px;
+}
+
+.register p a{
+    color: azure;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;;
+}
+
+:root{
+    --gradient: linear-gradient
+}
+}
+
+/* RESONSIVIDADE PARA DISPOSITIVOS MOVEIS Cadastro - largura 360px X 450px */
+@media (min-width: 360px) and (max-width: 450px){
+    /*CSS TELA DE CADASTRO  BASE*/
+
+.login-box2{
+    width: 350px;
+    height: 550px;
+    border-radius: 30px;
+    background-color: transparent ;
+    color:#850cfe;
+    padding: 30px 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    margin-top: 70px;
+  
+  }
+  .login-box2 h2{
+    font-size: 36px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(116, 24, 221), rgb(73, 73, 230), rgb(183, 113, 212));
+    background-clip: text; -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .login-box2 .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+  }
+  .login-box2 .lembrar-senha{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    margin-left: 22px;
+    margin-right: 18px;
+  }
+  .login-box2 .btn2{
+    width: 90%;
+    height: 35px;
+    background-color: #850CFE;
+    border: 1px solid  white;
+    outline: none;
+    border-radius: 9px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(118, 2, 250), rgb(74, 74, 217), rgb(52, 14, 99));
+  }
+  
+  .login-box2 .register{
+    font-size: 14.5px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 22px;
+  }
+}
