@@ -25,9 +25,9 @@
       <ul>
         
         <li class="btn-txt"><button class="butm"><a href="index.html">Home</a></button></li>
-        <li class="btn-txt"><button class="butm"><a href="minhaArea.html">Minha Área</a></button></li>
+        <!-- <li class="btn-txt"><button class="butm"><a href="minhaArea.html">Minha Área</a></button></li> -->
         <li class="btn-txt"><button class="butm"><a href="sobre.html">Sobre</a></button></li>
-        <!-- <li class="btn-txt"><button class="butm"><a href="login.html">Login</a></button></li> -->
+        <li class="btn-txt"><button class="butm"><a href="platafoma.html">Plataforma</a></button></li>
 
 
       </ul>
@@ -51,19 +51,43 @@
 
     <form class="cadJogo">
       <h4>Cadastro do Jogo</h4>
-      <input type="text" placeholder="Nome do Jogo" required >
-      <input type="text" placeholder="Desenvolvedora" required >
-      <input type="text" placeholder="Plataforma" required >
-      <input type="text" placeholder="Categoria" required >
-      <select name="estadoJogo" id="" >
+      <input id="selc" type="text" placeholder="Nome do Jogo" required >
+      <input id="selc" type="text" placeholder="Desenvolvedora" required >
+      <select name="estadoJogo" id="selc" >
+        <option value="">Plataforma</option>
+        <option value="">Steam</option>
+        <option value="">Playstation</option>
+        <option value="">Xbox</option>
+        <option value="">Nintendo</option>
+        <option value="">Mobile</option>
+        <option value="">PC</option>
+        <option value="">Epic</option>
+        <option value="">Blizzard</option>
+        <option value="">Riot Games</option>
+        <option value="">Ubsoft</option>
+      </select>
+      <select name="estadoJogo" id="selc" >
+        <option value="">Categoria</option>
+        <option value="">Ação</option>
+        <option value="">Aventura</option>
+        <option value="">Esporte</option>
+        <option value="">Estratégia</option>
+        <option value="">RPG</option>
+        <option value="">Simulação</option>
+        <option value="">Luta</option>
+        <option value="">Plataforma</option>
+        <option value="">Musical</option>
+        <option value="">Survival</option>
+      </select>
+      <select name="estadoJogo" id="selc" >
         <option value="">Estado do Jogo</option>
         <option value="ATIVO">ATIVO</option>
         <option value="PAUSADO">PAUSADO</option>
         <option value="FINALIZADO">FINALIZADO</option>
       </select>
       <div class="botoes">
-        <button type="submit">Salvar</button>
-        <button type="reset">Limpar</button>
+        <button id="but" type="submit">Salvar</button>
+        <button id="but" type="reset">Limpar</button>
       </div>
 
 
@@ -75,6 +99,7 @@
         <th>PLATAFORMA</th>
         <th>CATEGORIA</th>
         <th>ESTADO DO JOGO</th>
+        <th>AÇÕES</th>
       </tr>
       <tr class="gameItens">
         <td id="ref">Lorem Ipsum</td>
@@ -82,9 +107,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -93,9 +118,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -104,9 +129,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -115,9 +140,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -126,9 +151,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -137,9 +162,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -148,9 +173,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -159,9 +184,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -170,9 +195,21 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
+        </td>
+      </tr>
+      <tr></tr>
+      <tr class="gameItens">
+        <td id="ref">Lorem Ipsum</td>
+        <td id="ref">Lorem ipsum dolor</td>
+        <td id="ref">Lorem ipsum dolor</td>
+        <td id="ref">Lorem ipsum dolor</td>
+        <td id="ref">Lorem ipsum dolor</td>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -181,9 +218,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -192,9 +229,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -203,9 +240,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
       <tr class="gameItens">
@@ -214,20 +251,9 @@
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
         <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
-        </td>
-      </tr>
-      <tr class="gameItens">
-        <td id="ref">Lorem Ipsum</td>
-        <td id="ref">Lorem ipsum dolor</td>
-        <td id="ref">Lorem ipsum dolor</td>
-        <td id="ref">Lorem ipsum dolor</td>
-        <td id="ref">Lorem ipsum dolor</td>
-        <td>
-          <button type="editar">EDITAR</button>
-          <button type="reset">EXCLUIR</button>
+        <td id="ref">
+          <button id="but" type="editar">EDITAR</button>
+          <button id="but" type="reset">EXCLUIR</button>
         </td>
       </tr>
     </table>

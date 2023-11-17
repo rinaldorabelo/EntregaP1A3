@@ -61,6 +61,7 @@ header{
 .menu{
     margin: auto;  
     margin-left: 15%;
+    margin-top: 10%;
 }
 
 .menu ul {
@@ -69,6 +70,7 @@ header{
     justify-content: center;
     /*-----------------------*/
     list-style: none;
+    margin-top: 4.5%;
 }
 .menu li a{
     padding: 15px;
@@ -1065,7 +1067,7 @@ footer {
   height: 90%;
   color: azure;
   margin: 30px;
-  margin-top: 5%;
+  margin-top: -4%;
 
 }
 
@@ -1239,7 +1241,7 @@ footer {
   text-align: center;
 }
 
-/* CONFIGURAÇÃO DO CABEÇLHO DA TABELA */
+/* CONFIGURAÇÃO DO CABEÇALHO DA TABELA */
 
 .tabelaGame{
   display: flex;
@@ -1301,6 +1303,187 @@ footer {
     rgba(0, 0, 0, 0.192) 0px 5.10423px 9.18761px -3.375px,
     rgba(0, 0, 0, 0.03) 0px 16px 28.8px -4.5px;
 }
+/* CONFIGURAÇÃO DO CABEÇALHO DA TABELA MINHA AREA*/
+#selc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 12%;
+  height: 55%;
+  background-color: #292929;
+  border-radius: 3px;
+  border: 2px solid #292929;
+  padding: 0px 12px;
+  outline: none;
+  caret-color: rgb(152, 88, 255);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+
+
+#selc:focus,
+#selc:valid {
+  border: 2px solid rgb(152, 88, 255);
+  transition-duration: .2s;
+}
+
+
+/* CONFIGURAÇÃO DO CABEÇALHO DA TABELA PLATAFORMA*/
+
+#but{
+  margin-bottom: 20%;
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  height: 20px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  /* letter-spacing: 1.2px; */
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+  border: 0 solid;
+  overflow: hidden;
+  margin: 0;
+}
+
+#but:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+
+}
+
+
+
+
+.cadJogo2{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #1a1a1a;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  margin: 0;
+
+}
+.cadJogo2 h4{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-left: 2%;
+}
+
+
+#input2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 55%;
+  margin-left: 3.4%;
+  background-color: #292929;
+  border-radius: 3px;
+  border: 2px solid #292929;
+  padding: 0px 12px;
+  outline: none;
+  caret-color: rgb(152, 88, 255);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+
+#input2:focus,
+#input2:valid {
+  border: 2px solid rgb(152, 88, 255);
+  transition-duration: .2s;
+}
+
+.areaUs2{
+  display: flex;
+  justify-content: space-between;
+  background-color: #202020;
+  width: 100%;
+  height: 61px;
+}
+
+.botoes2 {
+  margin-left: 2%;
+}
+
+.tabelaGame2{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  background-color: #1d1d1d;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+
+
+  
+}
+
+
+.cabTab th{
+  width: 200px;
+  text-align: center;
+  background-color: #5f5e5e;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+}
+
+#ref{
+  height: 50px;
+  text-align: center;
+  border-color: #3d3d3d;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+}
+/* EFEITO DO BOTÃO DE EDITAR E EXCLUIR DA TABELA DE JOGOS JÁ ACADASTRADA RETIRADO DA URL'https://uiverse.io/SteveBloX/light-owl-27'  */
+.gameItens button{
+  border-radius: 8px;
+  height: 20px;
+  border: none;
+  background: #5f5e5e;
+  color: white;
+  margin-top: 20%;
+  box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px #00000026,
+    0 1.8065619053231785px 1.8065619053231785px -1.25px #00000025,
+    0 3.6217592146567767px 3.6217592146567767px -1.875px #00000023,
+    0 6.8655999097303715px 6.8655999097303715px -2.5px #00000020,
+    0 13.646761411524492px 13.646761411524492px -3.125px #0000001b,
+    0 30px 30px -3.75px #0000000d;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+}
+
+.gameItens button:active {
+  scale: 0.95;
+  background: #fff;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 0.637473px 1.14745px -1.125px,
+    rgba(0, 0, 0, 0.24) 0px 1.93094px 3.4757px -2.25px,
+    rgba(0, 0, 0, 0.192) 0px 5.10423px 9.18761px -3.375px,
+    rgba(0, 0, 0, 0.03) 0px 16px 28.8px -4.5px;
+}
+
+
+
+
 
 /* RESPONSIVIDADE DO MENU E DO CARD DE JOGOS */
 @media (min-width: 1200px){
